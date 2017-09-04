@@ -14,5 +14,6 @@
 # Visual Studio 6 workspace options file
 *.opt
 
-PWB1000V/bin
-PWB1000V/obj
+# Build results
+bin/
+obj/
