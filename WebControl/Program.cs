@@ -16,7 +16,7 @@ namespace WebControl
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RevampedForm());
+            Application.Run(new FrameMap());
         }
     }
 }
