@@ -103,11 +103,11 @@ namespace WebControl
                     {
                         sb.AppendLine("<td align=center><font size=2>" + (rows - i) + "</font></td>");
                     }
-                    sb.AppendLine("<td align=center width=" + (100 / columns) + "% ");
+                    sb.Append("<td align=center width=" + (100 / columns) + "% ");
                     int[] unitCoord = GetUnitCoord(i, j);
                     sb.Append("title='Unit #" + unitCoord[1] + "," + unitCoord[0] + "' ");
                     // Attach onclick event
-                    sb.Append("onclick=\"window.external.Test('" + "Unit #" + unitCoord[1] + "," + unitCoord[0] + "')\"");
+                    sb.Append("onclick=\"window.external.Test('" + "Unit #" + unitCoord[1] + "," + unitCoord[0] + "')\" ");
                     if (status == 0)
                     {
                         sb.Append("bgcolor='green'>" + rc.ToString());
