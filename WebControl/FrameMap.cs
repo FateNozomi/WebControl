@@ -124,6 +124,9 @@ namespace WebControl
             sb.AppendLine("</table>");
             sb.AppendLine("</body>");
             sb.AppendLine("</html>");
+            string outputHTML = sb.ToString();
+            string fileName = string.Concat("FrameMap", ".html");
+            System.IO.File.WriteAllText(AppDomain.CurrentDomain.BaseDirectory + fileName, outputHTML);
             wbFrameMap.DocumentText = sb.ToString();
         }
 
