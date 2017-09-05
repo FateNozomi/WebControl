@@ -48,6 +48,7 @@
             this.Controls.Add(this.wbFrameMap);
             this.Name = "FrameMap";
             this.Text = "FrameMap";
+            this.Load += new System.EventHandler(this.FrameMap_Load);
             this.ResumeLayout(false);
 
         }

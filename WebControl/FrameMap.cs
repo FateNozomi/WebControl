@@ -21,6 +21,10 @@ namespace WebControl
         public FrameMap()
         {
             InitializeComponent();
+        }
+
+        private void FrameMap_Load(object sender, EventArgs e)
+        {
             wbFrameMap.AllowWebBrowserDrop = false;
             wbFrameMap.IsWebBrowserContextMenuEnabled = false;
             wbFrameMap.WebBrowserShortcutsEnabled = false;
